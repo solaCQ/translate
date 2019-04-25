@@ -1,0 +1,544 @@
+ï»¿WEBVTT
+00:00:05.580 --> 00:00:06.700
+
+Welcome to all.
+00:00:06.780 --> 00:00:11.020
+
+Do not often discuss the formatting of a string for printing.
+00:00:11.030 --> 00:00:15.590
+
+You will want to be able to inject a variable into a string for printing.
+00:00:15.590 --> 00:00:17.560
+
+So we have already learned about concatenated lagoon.
+00:00:17.690 --> 00:00:22.040
+
+For example, you can have a variable called in my name equal to Jose and you want to print sentence lag.
+00:00:22.040 --> 00:00:23.040
+
+Hello JosÃ ©.
+00:00:23.090 --> 00:00:25.310
+
+So what you can do is say Prince.
+00:00:25.460 --> 00:00:30.170
+
+And inside this printing function, you say hello and concatenate it with variable lag my name.
+00:00:30.170 --> 00:00:34.370
+
+Now, there are actually several ways to format strings to print the variables so that you
+00:00:34.370 --> 00:00:37.190
+
+do not have to constantly use this concatenation or this plus sign.
+00:00:37.430 --> 00:00:41.840
+
+And this in general is known as interpellation of strings, which is basically joste
+00:00:41.840 --> 00:00:47.490
+
+a very elegant way to say to stick a variable in a chain, so we will explore two methods to do it.
+00:00:47.510 --> 00:00:52.920
+
+One is the formatting method lag and the other is the string method lag that represents the formatted string literals.
+00:00:53.060 --> 00:00:56.830
+
+And this is a more recent method for some newer versions of Python 3.
+00:00:56.870 --> 00:01:01.160
+
+Personally, I prefer this formatting method, but let's go and show them both so that you can
+00:01:01.160 --> 00:01:03.200
+
+choose the style that suits you best.
+00:01:03.200 --> 00:01:04.060
+
+CommenÃ§ons.
+00:01:04.240 --> 00:01:04.500
+
+OKAY.
+00:01:04.520 --> 00:01:10.330
+
+Let's start by discussing the lagging format and syntax lag method of arbejdsformande. 
+00:01:10.340 --> 00:01:16.400
+
+define your string, then inside your string, special braces will serve as spaces for the variables
+00:01:16.400 --> 00:01:20.950
+
+that you are going to insert. 
+00:01:21.110 --> 00:01:26.510
+
+And inside that, you'll call the strings or variables that you want to insert into
+00:01:26.510 --> 00:01:27.400
+
+your chain.
+00:01:27.410 --> 00:01:29.590
+
+Let's review a lot of examples here.
+00:01:29.660 --> 00:01:36.050
+
+We will start with the most elementary example that simply derbs that it is a chain that will open and
+00:01:36.050 --> 00:01:37.390
+
+close the braces.
+00:01:37.550 --> 00:01:40.660
+
+And joste after chain lag, we will call this format.
+00:01:40.670 --> 00:01:45.840
+
+Notice, then, how the point touches chain lag at this point, and then whatever string lag to insert.
+00:01:45.880 --> 00:01:53.210
+
+So, for it to be really obvious, I'm going to put all the uppercase letters inserted and run this and I see that it's a
+00:01:53.540 --> 00:01:54.310
+
+inspection team. \ t
+00:01:54.530 --> 00:02:00.650
+
+So, with DOT format formatting lag, it's a matter of grabbing chain lag and inserting it into lagde
+00:02:00.650 --> 00:02:01.770
+
+place braces.
+00:02:01.850 --> 00:02:05.810
+
+So there are a lot of advantages here and we're going to look at them all.
+00:02:05.810 --> 00:02:10.080
+
+One advantage is that the strings can actually be inserted by lagging index position.
+00:02:10.460 --> 00:02:12.770
+
+Imagine that we wanted to insert a lot of things.
+00:02:12.770 --> 00:02:17.680
+
+We will say braces accolades braces accolades.
+00:02:18.020 --> 00:02:21.380
+
+Then say that
+00:02:23.740 --> 00:02:28.180
+
+format and tell the Fox Brown.
+00:02:28.590 --> 00:02:34.560
+
+Now, what happens is that this format inserts the chains into the same order.
+00:02:34.590 --> 00:02:37.620
+
+You have provided them and in these braces.
+00:02:37.620 --> 00:02:40.630
+
+So now we have Brown Fast Lute.
+00:02:40.700 --> 00:02:46.200
+
+What would be nice, it's that if we really have this grammatical meaning that will become the luster
+00:02:46.290 --> 00:02:53.760
+
+fast brown. 
+00:02:53.760 --> 00:02:55.800
+
+numbers in the order I want.
+00:02:55.800 --> 00:02:58.550
+
+The first word I want is so fast.
+00:02:58.590 --> 00:03:02.510
+
+So it's also in the show because it's 0 1 2.
+00:03:02.760 --> 00:03:09.150
+
+So, I'll say OK, two go first here and then go on next thing I want to be brown.
+00:03:09.150 --> 00:03:13.810
+
+So it's a position 1 so 0 1 and then the first mod.
+00:03:13.810 --> 00:03:17.190
+
+Fox indeks 0 here hva be the last I want.
+00:03:18.280 --> 00:03:20.200
+
+And then when I run that, I'll come back.
+00:03:20.200 --> 00:03:21.930
+
+The fast brown luster.
+00:03:22.000 --> 00:03:24.610
+
+What is also very nice is that I can actually repeat them.
+00:03:24.670 --> 00:03:31.630
+
+So, if I mean the Fox Fox, I could just say 0 0 0 here and do it now.
+00:03:31.630 --> 00:03:38.820
+
+I now have the Fox Fox, which allows me to play with that in case I want to work from an udstilling.
+00:03:38.830 --> 00:03:43.270
+
+Now, it is also interesting to node that not only can I call things outside of lag position index.
+00:03:43.420 --> 00:03:49.420
+
+I can also give them keywords, and then simply call them, because here, as part of this work, there is really no indication that
+00:03:49.570 --> 00:03:54.700
+
+zero is synonymous with Fox and it is derhen that I have to look over and say OK what is
+00:03:54.700 --> 00:03:55.730
+
+the first mod.
+00:03:55.900 --> 00:03:57.400
+
+What I can do is assign them keywords.
+00:03:57.430 --> 00:03:58.330
+
+So let's do this.
+00:03:58.330 --> 00:04:05.320
+
+We're going to define braces accolades braces accolades braces indicates the format, and then in
+00:04:05.500 --> 00:04:12.130
+
+the current format call, say that F is equal to the Fox chain lag.
+00:04:12.130 --> 00:04:21.400
+
+bede is equal to Brown will say that is equal to fast and then I can use these names of
+00:04:21.550 --> 00:04:22.980
+
+variable here.
+00:04:23.010 --> 00:04:25.720
+
+F. B and Q to insert them.
+00:04:25.730 --> 00:04:30.130
+
+So, basically, use these keywords as variable names and insert them this way.
+00:04:30.130 --> 00:04:36.870
+
+So, instead, say that queue lag will be.
+00:04:37.710 --> 00:04:39.210
+
+And then when I run that, I'll come back.
+00:04:39.210 --> 00:04:44.790
+
+The brown light is fast and this is even nicer than before because it is a bit more readable for someone
+00:04:44.790 --> 00:04:45.860
+
+who uses it as OK.
+00:04:45.870 --> 00:04:47.290
+
+Q means fast.
+00:04:47.370 --> 00:04:51.130
+
+Instead of looking back and asking yourself OK, what was going on in that position too.
+00:04:51.270 --> 00:04:52.980
+
+And then come here to format.
+00:04:53.040 --> 00:04:55.140
+
+So, it's able to use these keywords.
+00:04:55.320 --> 00:04:58.240
+
+And I really prefer it that way myself.
+00:05:00.170 --> 00:05:05.240
+
+And which is also very positive if, for some reason, you wanted
+00:05:05.240 --> 00:05:11.860
+
+say the Fox Fox, you can just type F here in each of these brackets and recover the Fox Fox.
+00:05:11.960 --> 00:05:14.910
+
+Again, by using keywords, you can easily use lag repetition.
+00:05:15.300 --> 00:05:15.620
+
+OKAY.
+00:05:15.620 --> 00:05:21.140
+
+To finish our discussion on method lag form, I would like to briefly talk about lagging formatting flotanede
+00:05:21.140 --> 00:05:26.660
+
+with lag DOT formatting method. 
+00:05:26.660 --> 00:05:28.140
+
+floating point number.
+00:05:28.360 --> 00:05:34.040
+
+Let's start with an example, we will say that the result is equal to 100 divided by 7 7 7.
+00:05:34.060 --> 00:05:39.900
+
+As you would expect, this result is a number followed by a ton of decimal points.
+00:05:40.090 --> 00:05:44.980
+
+Well, we can do if, when we print this, we can actually change the level of precision that
+00:05:45.340 --> 00:05:48.260
+
+we want and even change the width of the number itself.
+00:05:49.030 --> 00:05:52.610
+
+So we will start by saying Prince.
+00:05:52.790 --> 00:06:03.220
+
+The result has been, and then open and closed braces indicate that format, and here the result is displayed.
+00:06:03.220 --> 00:06:04.570
+
+And we see that the result was.
+00:06:04.600 --> 00:06:07.630
+
+And basically, this kind of large number of precision.
+00:06:07.780 --> 00:06:14.170
+
+What I can do is say that R is equal to the result then I pass and I'm inside the braces and that
+00:06:14.170 --> 00:06:15.490
+
+Your results will result.
+00:06:15.700 --> 00:06:20.850
+
+So, formatting for stream formatting up to point formatting method lag
+00:06:20.860 --> 00:06:22.760
+
+is the lag value you specify.
+00:06:22.780 --> 00:06:25.710
+
+So, in this case, it is here to see the real value lag name.
+00:06:25.840 --> 00:06:32.050
+
+Then you write two dots and then you write in lagde value with which you want points, then lagde value
+00:06:32.050 --> 00:06:37.550
+
+of precision, then in F and often, what you are really going to worry about is the precise accuracy of that
+00:06:37.570 --> 00:06:42.680
+
+width lagde simply allows you to add. 
+00:06:42.730 --> 00:06:45.770
+
+Let's do the following, we will say value.
+00:06:45.850 --> 00:06:47.910
+
+So it's our heart.
+00:06:48.010 --> 00:06:53.260
+
+We are going to define our with just one equal at one point and then the level of precision we want.
+00:06:53.260 --> 00:06:56.320
+
+So this is mainly where you will play with this value of accuracy.
+00:06:56.410 --> 00:06:56.970
+
+Imagine.
+00:06:56.980 --> 00:06:59.670
+
+I only want three places with a decimal point.
+00:06:59.710 --> 00:07:05.080
+
+So, I want a two then nine because that's hva being around that until 9 in
+00:07:05.080 --> 00:07:14.330
+
+because of 7 joste next I would say 1. 3 if I run this and I get 0. 1 to 9.
+00:07:14.410 --> 00:07:19.540
+
+Now, if I play with that with lagde value and I'm really doing it big, what happens is
+00:07:19.540 --> 00:07:21.240
+
+that you end up adding spaces.
+00:07:21.280 --> 00:07:27.490
+
+And lagdog reason is that with with roughly describes how much time or how much width you want this
+00:07:27.490 --> 00:07:29.000
+
+whole number of string is.
+00:07:29.080 --> 00:07:34.570
+
+It's not very useful because you end up writing a ton of spaces, but there may be certain situations in
+00:07:34.660 --> 00:07:36.170
+
+which you may want to say that.
+00:07:36.400 --> 00:07:40.930
+
+So, it's available here, but often you'll play with lagde
+00:07:40.930 --> 00:07:41.460
+
+© PRA decision.
+00:07:41.560 --> 00:07:43.310
+
+So, we can do this five.
+00:07:43.690 --> 00:07:44.710
+
+And here we can see.
+00:07:44.710 --> 00:07:49.950
+
+Now, we take less of the total with because with white spaces because we have more than
+00:07:49.950 --> 00:07:54.870
+
+numbers that pass a decimal point and what you can just keep as one.
+00:07:54.970 --> 00:08:03.120
+
+But let's go and show another example, let's say that the result is equal to, say, 104 points.
+00:08:03.170 --> 00:08:05.130
+
+One two three four five.
+00:08:05.250 --> 00:08:10.560
+
+Execute this operation and we can see here that even if one on the other side is a decimal point, it's essentially
+00:08:10.860 --> 00:08:15.020
+
+lagde same thing and we can add it and play this value in comma flotanede.
+00:08:15.370 --> 00:08:18.160
+
+OK, so this is a float formatting with the dot for a method.
+00:08:18.210 --> 00:08:24.870
+
+Again, it's your value and your accuracy, followed by F. You can read the booklet for
+00:08:24.870 --> 00:08:27.090
+
+many other examples about it.
+00:08:27.090 --> 00:08:31.310
+
+
+00:08:31.420 --> 00:08:36.930
+
+
+00:08:36.960 --> 00:08:38.790
+
+
+00:08:38.790 --> 00:08:43.890
+
+
+00:08:43.890 --> 00:08:48.690
+
+
+00:08:48.690 --> 00:08:54.780
+
+
+00:08:54.780 --> 00:08:57.970
+
+So we will use the following method lagde to create two new cells here.
+00:09:00.080 --> 00:09:05.990
+
+I will say that the name is equal to Jose.
+00:09:06.140 --> 00:09:06.750
+
+Run that.
+00:09:06.950 --> 00:09:11.500
+
+And then all I should do is say hello.
+00:09:11.750 --> 00:09:19.740
+
+If his name is and then I would say that the name of the format, I run it and he derhen hello. 
+00:09:19.970 --> 00:09:27.870
+
+You can replace the format call by simply typing an F in front of chain lag, then you
+00:09:27.870 --> 00:09:32.880
+
+can pass the name directly into the chaÃ® dildo in itself.
+00:09:33.090 --> 00:09:35.520
+
+And if you listen to this, you get the same result.
+00:09:35.520 --> 00:09:40.340
+
+We're going to get that from crazy channels to formatted string literals, which is new.
+00:09:40.350 --> 00:09:42.150
+
+Python 3. 6
+00:09:42.150 --> 00:09:45.660
+
+And many people have been asking for this feature for a long time, because it's quite common
+00:09:45.660 --> 00:09:46.650
+
+in other languages.
+00:09:46.650 --> 00:09:50.460
+
+Again because I'm a little older, I really got used to this formatting method, it's
+00:09:50.460 --> 00:09:51.180
+
+why I love him so much.
+00:09:51.180 --> 00:09:55.120
+
+But if you come from other languages, I would certainly suggest you check the channels.
+00:09:55.170 --> 00:09:59.370
+
+Many people think that this is a huge improvement over previous method and
+00:09:59.370 --> 00:10:04.480
+
+you can see why it's really handy to be able to write this variable name directly inside these braces.
+00:10:06.580 --> 00:10:09.030
+
+And it works with several variables.
+00:10:09.220 --> 00:10:17.730
+
+So let's say that the name is Sam the age is 3.
+00:10:18.130 --> 00:10:22.450
+
+We can say print F so that Python knows string f.
+00:10:22.670 --> 00:10:23.340
+
+Well.
+00:10:24.690 --> 00:10:25.960
+
+And braces.
+00:10:26.040 --> 00:10:32.250
+
+The name is a h accolade.
+00:10:32.480 --> 00:10:34.890
+
+And if we run that, we see that Sam is three years old.
+00:10:34.970 --> 00:10:39.260
+
+So it's a very good way to quickly make a chain inquiry that consists of
+00:10:39.260 --> 00:10:41.880
+
+simply injecting variables into string lag itself.
+00:10:42.290 --> 00:10:42.650
+
+OKAY.
+00:10:42.710 --> 00:10:45.160
+
+These are the basics of chain formatting.
+00:10:45.170 --> 00:10:48.240
+
+We have many more examples in the notebook in case you are interested.
+00:10:48.410 --> 00:10:52.160
+
+And we also have examples of older string formatting methods that
+00:10:52.160 --> 00:10:57.560
+
+still work technically in Python 3, and I strongly recommend you use lagde point format method or use this new method of
+00:10:57.560 --> 00:10:57.930
+
+chaÃ®ne.
+00:10:57.950 --> 00:10:58.930
+
+Use that too.
+00:10:59.120 --> 00:11:03.770
+
+I just wanted to show you briefly what the nopal looks like for this conference. 
+00:11:03.770 --> 00:11:09.070
+
+can see here that we have a ton of examples of formatting chain for lagging formatting
+00:11:09.080 --> 00:11:13.220
+
+of spaces reserved. 
+00:11:13.220 --> 00:11:17.920
+
+how it can use deciding and padding for floating point numbers.
+00:11:17.930 --> 00:11:22.730
+
+We also have many more examples with lagde method of thinking format of inserting objects by
+00:11:22.820 --> 00:11:23.910
+
+a udstilling the reuse.
+00:11:23.930 --> 00:11:25.720
+
+We also have precision alignments.
+00:11:25.730 --> 00:11:29.840
+
+So all that stuff, all this stuff that we're not going to use throughout the course but that's
+00:11:29.840 --> 00:11:30.900
+
+available in the note.
+00:11:31.010 --> 00:11:35.250
+
+In case you really want to delve into this subject, we have many examples for you.
+00:11:35.540 --> 00:11:36.040
+
+OKAY.
+00:11:36.290 --> 00:11:40.010
+
+Again, all you really need to know about formatting chains for
+00:11:40.010 --> 00:11:46.010
+
+this course is that you can use string literals to inject and interpret strings in this way or use method lag of point format for injecting
+00:11:46.010 --> 00:11:47.050
+
+variables this way.
+00:11:47.270 --> 00:11:47.640
+
+OKAY.
+00:11:47.660 --> 00:11:48.780
+
+I hope those that are helpful to you.
+00:11:48.890 --> 00:11:49.910
+
+We will see you in the next lesson.

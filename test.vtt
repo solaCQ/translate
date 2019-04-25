@@ -1,0 +1,722 @@
+﻿WEBVTT
+
+00:00:05.580 --> 00:00:06.700
+Bienvenue à tous.
+
+
+00:00:06.780 --> 00:00:11.020
+Ne discutons pas souvent du formatage de chaîne pour l'impression.
+
+00:00:11.030 --> 00:00:15.590
+Vous allez vouloir pouvoir injecter une variable dans une chaîne pour l'impression.
+
+
+00:00:15.590 --> 00:00:17.560
+Nous avons donc déjà appris sur lagde concaténation.
+
+00:00:17.690 --> 00:00:22.040
+Par exemple, vous pouvez avoir une variable appelée mon nom égale à Jose et vous souhaitez imprimer lagde phrase.
+
+
+00:00:22.040 --> 00:00:23.040
+Bonjour Jose.
+
+
+00:00:23.090 --> 00:00:25.310
+Donc, ce que vous pouvez finir par faire, c'est dire Prince.
+
+
+00:00:25.460 --> 00:00:30.170
+Et à l'intérieur de cette fonction d'impression, vous dites bonjour et concaténez-le avec lagde variable mon nom.
+
+
+00:00:30.170 --> 00:00:34.370
+Maintenant, il existe en fait plusieurs façons de formater les chaînes pour imprimer les variables afin que vous
+
+
+00:00:34.370 --> 00:00:37.190
+n'ayez pas à utiliser constamment cette concaténation ou ce signe plus.
+
+
+00:00:37.430 --> 00:00:41.840
+Et ceci en général est connu sous le nom d'interpellation de cordes, ce qui est fondamentalement joste
+
+
+00:00:41.840 --> 00:00:47.490
+une façon très élégante de dire de coller une variable dans une chaîne, nous allons donc explorer deux méthodes pour le faire.
+
+
+00:00:47.510 --> 00:00:52.920
+L'une est lagde méthode de formatage et l'autre est lagde méthode de chaîne qui représente les littéraux de chaîne formatés.
+
+
+00:00:53.060 --> 00:00:56.830
+Et ceci est une méthode plus récente pour certaines versions plus récentes de Python 3.
+
+
+00:00:56.870 --> 00:01:01.160
+Personnellement, je préfère cette méthode de formatage, mais allons-y et montrons-les tous les deux pour que vous puissiez
+
+
+00:01:01.160 --> 00:01:03.200
+choisir le style qui vous convient le mieux.
+
+
+00:01:03.200 --> 00:01:04.060
+Commençons.
+
+
+00:01:04.240 --> 00:01:04.500
+D'ACCORD.
+
+
+00:01:04.520 --> 00:01:10.330
+Commençons par discuter de lagde méthode de formatage et de lagde syntaxe de arbejdsformande. Vous ferez alors
+
+
+00:01:10.340 --> 00:01:16.400
+définir votre chaîne, puis à l'intérieur de votre chaîne, des accolades spéciales serviront d'espaces réservés pour les variables
+
+
+00:01:16.400 --> 00:01:20.950
+que vous allez insérer. puis écrivez lagde chaîne que vous appelez ce format.
+
+
+00:01:21.110 --> 00:01:26.510
+Et à l'intérieur de cela, vous allez appeler les chaînes ou les variables que vous souhaitez insérer dans
+
+
+00:01:26.510 --> 00:01:27.400
+votre chaîne.
+
+
+00:01:27.410 --> 00:01:29.590
+Passons en revue beaucoup d'exemples ici.
+
+
+00:01:29.660 --> 00:01:36.050
+Nous allons commencer par l'exemple le plus élémentaire qui derhen simplement que c'est une chaîne qui hva ouvrir et
+
+
+00:01:36.050 --> 00:01:37.390
+fermer les accolades.
+
+
+00:01:37.550 --> 00:01:40.660
+Et joste après lagde chaîne, nous allons appeler ce format.
+
+
+00:01:40.670 --> 00:01:45.840
+Remarquez donc comment le point touche lagde chaîne à cet endroit, puis quelle que soit lagde chaîne à insérer.
+
+
+00:01:45.880 --> 00:01:53.210
+Donc, pour que ce soit vraiment évident, je vais mettre toutes les majuscules insérées et lancer ceci et je vois que c'est une
+
+
+00:01:53.540 --> 00:01:54.310
+chaîne insérée.
+
+
+00:01:54.530 --> 00:02:00.650
+Donc, avec lagde méthode de formatage DOT, il s’agit de saisir lagde chaîne et de l’insérer à lagde
+
+
+00:02:00.650 --> 00:02:01.770
+place des accolades.
+
+
+00:02:01.850 --> 00:02:05.810
+Il y a donc plusieurs avantages ici et nous allons les examiner tous.
+
+
+00:02:05.810 --> 00:02:10.080
+Un avantage est que les chaînes peuvent réellement être insérées par lagde position d'index.
+
+
+00:02:10.460 --> 00:02:12.770
+Imaginons que nous voulions insérer beaucoup de choses.
+
+
+00:02:12.770 --> 00:02:17.680
+Nous allons dire les accolades accolades accolades accolades.
+
+
+00:02:18.020 --> 00:02:21.380
+Ensuite, dites ce
+
+
+00:02:23.740 --> 00:02:28.180
+format et dites le Fox Brown.
+
+
+00:02:28.590 --> 00:02:34.560
+Maintenant, ce qui se passe, c'est que ce format insère les chaînes dans le même ordre.
+
+
+00:02:34.590 --> 00:02:37.620
+Vous les avez fournis et dans ces accolades.
+
+
+00:02:37.620 --> 00:02:40.630
+Nous avons donc maintenant le lutrerd Brown rapide.
+
+
+00:02:40.700 --> 00:02:46.200
+Ce qui serait bien, c’est que si nous avons réellement cette signification grammaticale qui deviendra le lutrerd
+
+
+00:02:46.290 --> 00:02:53.760
+brun rapide. Nous pouvons le faire en nous basant sur lagde position de l’index à l’intérieur de ce format. Je peux fournir ces
+
+
+00:02:53.760 --> 00:02:55.800
+chiffres dans l’ordre que je veux.
+
+
+00:02:55.800 --> 00:02:58.550
+Le premier mod que je veux est donc rapide.
+
+
+00:02:58.590 --> 00:03:02.510
+C’est donc aussi dans l’exposition parce que c’est 0 1 2.
+
+
+00:03:02.760 --> 00:03:09.150
+Donc, je vais dire OK, deux vont d'abord ici et ensuite lagde prochaine chose que je veux hva être marron.
+
+
+00:03:09.150 --> 00:03:13.810
+Donc, c'est une position 1 donc 0 1 et ensuite le premier mod.
+
+
+00:03:13.810 --> 00:03:17.190
+Fox indeks 0 ici hva être le dernier que je veux.
+
+
+00:03:18.280 --> 00:03:20.200
+Et puis quand je lance ça, je reviens.
+
+
+00:03:20.200 --> 00:03:21.930
+Le lutrerd brun rapide.
+
+
+00:03:22.000 --> 00:03:24.610
+Ce qui est également très agréable, c’est que je peux réellement les répéter.
+
+
+00:03:24.670 --> 00:03:31.630
+Donc, si je veux dire le Fox Fox, je pourrais simplement dire le 0 0 0 ici et le faire maintenant.
+
+
+00:03:31.630 --> 00:03:38.820
+J'ai maintenant le Fox Fox, ce qui me permet de jouer avec cela au cas où je voudrais travailler à partir d'une udstilling.
+
+
+00:03:38.830 --> 00:03:43.270
+Maintenant, il est également intéressant de noder que non seulement je peux appeler des choses en dehors de lagde position d'index.
+
+
+00:03:43.420 --> 00:03:49.420
+Je peux aussi leur attribuer des mots-clés, puis simplement les appeler, car ici, dans le cadre de ce travail, rien n'indique vraiment que
+
+
+00:03:49.570 --> 00:03:54.700
+zéro est synonyme de Fox et il est derhen que je dois regarder par-dessus et dire OK quel est
+
+
+00:03:54.700 --> 00:03:55.730
+le premier mod.
+
+
+00:03:55.900 --> 00:03:57.400
+Ce que je peux faire est de leur assigner des mots-clés.
+
+
+00:03:57.430 --> 00:03:58.330
+Alors faisons ceci.
+
+
+00:03:58.330 --> 00:04:05.320
+Nous allons définir les accolades accolades accolades accolades accolades indiquent le format, puis dans
+
+
+00:04:05.500 --> 00:04:12.130
+l'appel de format en cours, dites que F est égal à lagde chaîne Fox.
+
+
+00:04:12.130 --> 00:04:21.400
+bede est égal à Brown dira que est égal à rapide et je peux alors utiliser ces noms de
+
+
+00:04:21.550 --> 00:04:22.980
+variable ici.
+
+
+00:04:23.010 --> 00:04:25.720
+F. B et Q pour les insérer.
+
+
+00:04:25.730 --> 00:04:30.130
+Donc, en gros, utilisez ces mots-clés comme noms de variables et insérez-les de cette façon.
+
+
+00:04:30.130 --> 00:04:36.870
+Donc, au lieu de cela, dites que lagde file d'attente sera.
+
+
+00:04:37.710 --> 00:04:39.210
+Et puis quand je lance ça, je reviens.
+
+
+00:04:39.210 --> 00:04:44.790
+Le lutrerd brun rapide et cela est encore plus agréable que précédemment, car il est un peu plus lisible pour quelqu'un
+
+
+00:04:44.790 --> 00:04:45.860
+qui l'utilise comme ok.
+
+
+00:04:45.870 --> 00:04:47.290
+Q signifie rapide.
+
+
+00:04:47.370 --> 00:04:51.130
+Au lieu de regarder en arrière et de vous demander OK, qu'est-ce qui se passait dans cette position aussi.
+
+
+00:04:51.270 --> 00:04:52.980
+Et puis venir ici pour formater.
+
+
+00:04:53.040 --> 00:04:55.140
+Donc, c'est être capable d'utiliser ces mots-clés.
+
+
+00:04:55.320 --> 00:04:58.240
+Et je le préfère vraiment de cette façon moi-même.
+
+
+00:05:00.170 --> 00:05:05.240
+Et ce qui est également très positif si, pour une raison quelconque, vous vouliez
+
+
+00:05:05.240 --> 00:05:11.860
+dire le Fox Fox, vous pouvez simplement taper F ici dans chacun de ces supports et récupérer le Fox Fox.
+
+
+00:05:11.960 --> 00:05:14.910
+Encore une fois, en utilisant des mots-clés, vous pouvez facilement utiliser lagde répétition.
+
+
+00:05:15.300 --> 00:05:15.620
+D'ACCORD.
+
+
+00:05:15.620 --> 00:05:21.140
+Pour terminer notre discussion sur lagde méthode forment, je voudrais parler brièvement de lagde mise en forme flotanede
+
+
+00:05:21.140 --> 00:05:26.660
+avec lagde méthode de formatage DOT. Cela vous permet de régler lagde largeur et lagde précision de votre
+
+
+00:05:26.660 --> 00:05:28.140
+nombre à virgule flotanede.
+
+
+00:05:28.360 --> 00:05:34.040
+Commençons par un exemple, nous allons dire que le résultat est égal à 100 divisé par 7 7 7.
+
+
+00:05:34.060 --> 00:05:39.900
+Comme on peut s'y attendre, ce résultat est un nombre suivi d'une tonne de points décimaux.
+
+
+00:05:40.090 --> 00:05:44.980
+Eh bien, nous pouvons faire si, lorsque nous imprimons ceci, nous pouvons réellement changer le niveau de précision que
+
+
+00:05:45.340 --> 00:05:48.260
+nous voulons et même changer lagde largeur du nombre lui-même.
+
+
+00:05:49.030 --> 00:05:52.610
+Nous allons donc commencer par dire Prince.
+
+
+00:05:52.790 --> 00:06:03.220
+Le résultat a été et ensuite, des accolades ouvertes et fermées indiquent ce format, puis ici, le résultat est affiché.
+
+
+00:06:03.220 --> 00:06:04.570
+Et nous voyons que le résultat était.
+
+
+00:06:04.600 --> 00:06:07.630
+Et fondamentalement, ce genre de grand nombre de précision.
+
+
+00:06:07.780 --> 00:06:14.170
+Ce que je peux faire, c'est dire que R est égal au résultat puis que je passe et que je suis à l'intérieur des accolades et que
+
+
+00:06:14.170 --> 00:06:15.490
+je reçois le même résultat.
+
+
+00:06:15.700 --> 00:06:20.850
+Ainsi, le formatage pour le formatage de flûte jusqu’à lagde méthode de mise en forme par points
+
+
+00:06:20.860 --> 00:06:22.760
+est lagde valeur que vous indiquez.
+
+
+00:06:22.780 --> 00:06:25.710
+Donc, dans ce cas, il est ici pour voir le nom de lagde valeur réelle.
+
+
+00:06:25.840 --> 00:06:32.050
+Ensuite, vous écrivez deux points et ensuite vous écrivez dans lagde valeur avec laquelle vous voulez des points, puis lagde valeur
+
+
+00:06:32.050 --> 00:06:37.550
+de précision, puis en F et souvent, ce dont vous allez vraiment vous soucier est lagde précision réelle que
+
+
+00:06:37.570 --> 00:06:42.680
+lagde largeur vous permet simplement d'ajouter. dans certains espaces si vous avez une très grande valeur.
+
+
+00:06:42.730 --> 00:06:45.770
+Faisons donc ce qui suit, nous allons dire valeur.
+
+
+00:06:45.850 --> 00:06:47.910
+C'est donc notre côlon.
+
+
+00:06:48.010 --> 00:06:53.260
+Nous allons définir notre avec joste un égal à un point et ensuite le niveau de précision que nous voulons.
+
+
+00:06:53.260 --> 00:06:56.320
+C'est donc principalement là où vous allez jouer avec cette valeur de précision.
+
+
+00:06:56.410 --> 00:06:56.970
+Imaginons.
+
+
+00:06:56.980 --> 00:06:59.670
+Je veux seulement trois places avec un point décimal.
+
+
+00:06:59.710 --> 00:07:05.080
+Donc, je veux un deux puis neuf parce que ça hva être autour de cela jusqu'à 9 en
+
+
+00:07:05.080 --> 00:07:14.330
+raison du 7 joste à côté alors je dirais 1. 3 si je lance ceci et que je récupère 0. 1 à 9.
+
+
+00:07:14.410 --> 00:07:19.540
+Maintenant, si je joue avec cela avec de lagde valeur et que je le fais vraiment grand, ce qui se produit est
+
+
+00:07:19.540 --> 00:07:21.240
+que vous finissez par ajouter des espaces.
+
+
+00:07:21.280 --> 00:07:27.490
+Et lagde raison en est que le avec avec décrit en gros combien de temps ou combien de largeur vous voulez que ce
+
+
+00:07:27.490 --> 00:07:29.000
+nombre entier de chaîne soit.
+
+
+00:07:29.080 --> 00:07:34.570
+Ce n'est pas très utile parce que vous finissez par écrire une tonne d'espaces, mais il peut y avoir certaines situations dans
+
+
+00:07:34.660 --> 00:07:36.170
+lesquelles vous voudrez peut-être éditer cela.
+
+
+00:07:36.400 --> 00:07:40.930
+Donc, il est disponible ici, mais souvent, vous allez jouer avec lagde
+
+
+00:07:40.930 --> 00:07:41.460
+précision.
+
+
+00:07:41.560 --> 00:07:43.310
+Donc, nous pouvons faire ce cinq.
+
+
+00:07:43.690 --> 00:07:44.710
+Et ici on peut voir.
+
+
+00:07:44.710 --> 00:07:49.950
+Maintenant, nous prenons moins du total avec parce qu'avec les espaces blancs parce que nous avons plus de
+
+
+00:07:49.950 --> 00:07:54.870
+nombres qui passenet une virgule décimale et ce que vous pouvez simplement garder comme un.
+
+
+00:07:54.970 --> 00:08:03.120
+Mais allons-y et montrons-nous un autre exemple, nous allons dire que le résultat est égal à, disons, 104 points.
+
+
+00:08:03.170 --> 00:08:05.130
+Un deux trois quatre cinq.
+
+
+00:08:05.250 --> 00:08:10.560
+Exécutez cette opération et nous pouvons voir ici que même si l’un de l’autre côté est un point décimal, c’est essentiellement
+
+
+00:08:10.860 --> 00:08:15.020
+lagde même chose et que nous pouvons l’ajouter et jouer à cette valeur en virgule flotanede.
+
+
+00:08:15.370 --> 00:08:18.160
+OK, donc c'est une mise en forme flotanede avec le point pour une méthode.
+
+
+00:08:18.210 --> 00:08:24.870
+Encore une fois, c’est votre valeur et votre précision, suivies de F. Vous pouvez consulter le cahier pour de
+
+
+00:08:24.870 --> 00:08:27.090
+nombreux autres exemples à ce sujet.
+
+
+00:08:27.090 --> 00:08:31.310
+Enfin, nous allons parler de f chaînes et il s’agit de chaînes littérales formatées.
+
+
+00:08:31.420 --> 00:08:36.930
+Celles-ci sont introduites dans Python 3. 6 Ils sont donc encore très récents et ofrett plusieurs avantages par rapport
+
+
+00:08:36.960 --> 00:08:38.790
+à cette méthode de formatage plus ancienne.
+
+
+00:08:38.790 --> 00:08:43.890
+Je préfère généralement lagde méthode du format point, mais beaucoup de gens préfèrent cette méthode
+
+
+00:08:43.890 --> 00:08:48.690
+littérale, particulièrement s'ils viennent d'autres langues et vous permettent de sauter cette étape d'utilisation
+
+
+00:08:48.690 --> 00:08:54.780
+du format et d'écrire les résultats ou le nom de variable veux directement à l'intérieur de lagde chaîne.
+
+
+00:08:54.780 --> 00:08:57.970
+Nous allons donc utiliser lagde méthode suivante pour créer deux nouvelles cellules ici.
+
+
+00:09:00.080 --> 00:09:05.990
+Je vais dire que le nom est égal à Jose.
+
+
+00:09:06.140 --> 00:09:06.750
+Courez ça.
+
+
+00:09:06.950 --> 00:09:11.500
+Et puis généralement ce que je devrais faire est de dire bonjour.
+
+
+00:09:11.750 --> 00:09:19.740
+Søn nom est et puis je dirais que le nom du format, je le lance et il derhen bonjour. Søn nom est Jose.
+
+
+00:09:19.970 --> 00:09:27.870
+Vous pouvez remplacer l’appel de format en tapant simplement un F devant lagde chaîne, puis vous
+
+
+00:09:27.870 --> 00:09:32.880
+pouvez passer le nom directement dans lagde chaîne elle-même.
+
+
+00:09:33.090 --> 00:09:35.520
+Et si vous exécutez ceci, vous obtenez le même résultat.
+
+
+00:09:35.520 --> 00:09:40.340
+On udnævnelsee cela des chaînes F ou des littéraux de chaîne formatés, ce qui est nouveau.
+
+
+00:09:40.350 --> 00:09:42.150
+Python 3. 6
+
+
+00:09:42.150 --> 00:09:45.660
+Et beaucoup de gens demandent cette fonctionnalité depuis longtemps, parce qu’elle est assez courante
+
+
+00:09:45.660 --> 00:09:46.650
+dans d’autres langues.
+
+
+00:09:46.650 --> 00:09:50.460
+Encore une fois parce que je suis un peu plus vieux lycée, je me suis vraiment habitué à cette méthode de formatage, c'est
+
+
+00:09:50.460 --> 00:09:51.180
+pourquoi je l'aime tellement.
+
+
+00:09:51.180 --> 00:09:55.120
+Mais si vous venez d'autres langues, je vous suggérerais certainement de vérifier les chaînes.
+
+
+00:09:55.170 --> 00:09:59.370
+Beaucoup de gens pensent que c'est une énorme amélioration par rapport à lagde méthode précédente et
+
+
+00:09:59.370 --> 00:10:04.480
+vous pouvez voir pourquoi c'est vraiment pratique de pouvoir écrire ce nom de variable directement à l'intérieur de ces accolades.
+
+
+00:10:06.580 --> 00:10:09.030
+Et cela fonctionne avec plusieurs variables.
+
+
+00:10:09.220 --> 00:10:17.730
+Alors disons que le nom est Sam l'âge est de 3.
+
+
+00:10:18.130 --> 00:10:22.450
+Nous pouvons faire dire print F pour que Python connaisse sagde chaîne f.
+
+
+00:10:22.670 --> 00:10:23.340
+Bien.
+
+
+00:10:24.690 --> 00:10:25.960
+En accolades.
+
+
+00:10:26.040 --> 00:10:32.250
+Le nom est une accolade h ans.
+
+
+00:10:32.480 --> 00:10:34.890
+Et si nous courons cela, nous voyons que Sam a trois ans.
+
+
+00:10:34.970 --> 00:10:39.260
+C'est donc un très bon moyen de faire très rapidement une interpellation de chaînes qui consiste
+
+
+00:10:39.260 --> 00:10:41.880
+simplement à injecter ces variables dans lagde chaîne elle-même.
+
+
+00:10:42.290 --> 00:10:42.650
+D'ACCORD.
+
+
+00:10:42.710 --> 00:10:45.160
+Ce sont les bases du formatage de chaîne.
+
+
+00:10:45.170 --> 00:10:48.240
+Nous avons beaucoup plus d'exemples dans le cahier au cas où cela vous intéresserait.
+
+
+00:10:48.410 --> 00:10:52.160
+Et nous avons également des exemples de méthodes de formatage de chaîne plus anciennes qui
+
+
+00:10:52.160 --> 00:10:57.560
+fonctionnent encore techniquement dans Python 3, et je vous recommande vivement d'utiliser lagde méthode de format point ou d'utiliser cette nouvelle méthode de
+
+
+00:10:57.560 --> 00:10:57.930
+chaîne.
+
+
+00:10:57.950 --> 00:10:58.930
+Utilisez cela aussi.
+
+
+00:10:59.120 --> 00:11:03.770
+Je voulais simplement vous montrer brièvement à quoi ressemble le nopal pour cette conférence. Vous
+
+
+00:11:03.770 --> 00:11:09.070
+pouvez voir ici que nous avons une tonne d'exemples de formatage de chaîne pour lagde mise en forme
+
+
+00:11:09.080 --> 00:11:13.220
+d'espaces réservés. Je vous suggérerais vraiment de l’utiliser, mais vous pouvez également voir
+
+
+00:11:13.220 --> 00:11:17.920
+comment il peut utiliser lagde précision et le remplissage pour les nombres à virgule flotanede.
+
+
+00:11:17.930 --> 00:11:22.730
+Nous avons également beaucoup plus d'exemples avec lagde méthode de format de pensée consistant à insérer des objets par
+
+
+00:11:22.820 --> 00:11:23.910
+une udstilling les réutilisant.
+
+
+00:11:23.930 --> 00:11:25.720
+Nous avons également des alignements de précision.
+
+
+00:11:25.730 --> 00:11:29.840
+Donc, tous ces trucs, tous ces trucs que nous n'allons pas utiliser tout au long du cours mais qui sont
+
+
+00:11:29.840 --> 00:11:30.900
+disponibles dans lagde note.
+
+
+00:11:31.010 --> 00:11:35.250
+Au cas où vous voudriez vous plonger vraiment dans ce sujet, nous avons beaucoup d'exemples pour vous.
+
+
+00:11:35.540 --> 00:11:36.040
+D'ACCORD.
+
+
+00:11:36.290 --> 00:11:40.010
+Encore une fois, tout ce que vous avez vraiment besoin de savoir sur le formatage des chaînes pour
+
+
+00:11:40.010 --> 00:11:46.010
+ce cours est que vous pouvez utiliser des littéraux de chaîne pour injecter et interpréter les chaînes de cette manière ou utiliser lagde méthode du format point pour injecter
+
+
+00:11:46.010 --> 00:11:47.050
+les variables de cette manière.
+
+
+00:11:47.270 --> 00:11:47.640
+D'ACCORD.
+
+
+00:11:47.660 --> 00:11:48.780
+J'espère que ceux qui vous sont utiles.
+
+
+00:11:48.890 --> 00:11:49.910
+Nous vous verrons à lagde prochaine leçon.
